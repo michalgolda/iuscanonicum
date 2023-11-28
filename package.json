@@ -1,0 +1,16 @@
+{
+  "name": "iuscanonicum",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev"
+  },
+  "keywords": [],
+  "author": "Michał Gołda",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.5"
+  }
+}
