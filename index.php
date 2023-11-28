@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+    <?php get_template_part('template-parts/header'); ?>
 
     <?php wp_footer(); ?>
 </body>
