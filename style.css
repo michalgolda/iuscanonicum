@@ -180,12 +180,13 @@ a {
   text-align: center;
 }
 
-.welcome__container {
+.welcome-block {
   padding: 64px 0 64px 0;
   background-color: #143642;
 }
-.welcome__container p {
+.welcome-block p {
   color: white;
+  text-align: center;
 }
 
 .contact-block {
