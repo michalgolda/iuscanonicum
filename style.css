@@ -47,6 +47,7 @@ a {
 .container {
   width: 100%;
   max-width: 1320px;
+  padding: 0 32px 0 32px;
   margin: 0 auto;
 }
 
@@ -115,6 +116,11 @@ a {
   max-width: 512px;
   min-width: 256px;
   flex-shrink: 4.5;
+}
+@media screen and (max-width: 1024px) {
+  .hero__img {
+    display: none;
+  }
 }
 
 .button {

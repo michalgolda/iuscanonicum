@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_utils";
 
 * {
   padding: 0;
@@ -49,7 +50,7 @@ a {
 .container {
   width: 100%;
   max-width: 1320px;
-  // padding: 0 32px 0 32px;
+  padding: 0 32px 0 32px;
   margin: 0 auto;
 }
 
@@ -128,6 +129,10 @@ a {
     max-width: 512px;
     min-width: 256px;
     flex-shrink: 4.5;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 }
 
