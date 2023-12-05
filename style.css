@@ -251,6 +251,27 @@ a {
   flex-direction: column;
 }
 
+#weCanHelpYou {
+  background-color: #143642;
+}
+#weCanHelpYou .section__heading {
+  color: white;
+}
+
+.weCanHelpYou-block {
+  padding: 64px 0 64px 0;
+}
+.weCanHelpYou-block__details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 32px;
+  align-items: center;
+}
+.weCanHelpYou-block__details p {
+  color: white;
+}
+
 .icon {
   width: 48px;
   height: 48px;

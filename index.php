@@ -158,6 +158,15 @@
                 </div>
             </div>
         </section>
+        <section id="weCanHelpYou" class="section">
+            <div class="weCanHelpYou-block container">
+                <h2 class="section__heading">Dowiedz się w jaki sposób możemy Ci pomóc</h2>
+                <div class="weCanHelpYou-block__details">
+                    <p>Etiam consectetur placerat nisl sed iaculis. Cras feugiat pretium feugiat. Suspendisse potenti. Donec nec metus suscipit, fringilla nibh quis, scelerisque urna. Integer ac enim ipsum. Donec et molestie magna. Phasellus dictum placerat diam, quis blandit dolor vehicula eu. Nullam vel urna a sem sodales tincidunt sed ut dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc in enim eleifend, feugiat urna eu, molestie nisl. Quisque ac lobortis ipsum. Mauris interdum nisi dui, a lobortis augue malesuada vitae.</p>
+                    <a class="button button--primary" href="#">Skontaktuj się</a>
+                </div>
+            </div>
+        </section>
     </main>
     <?php get_template_part('template-parts/footer'); ?>
 
