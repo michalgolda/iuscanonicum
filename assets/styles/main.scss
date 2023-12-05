@@ -30,7 +30,7 @@ h2 {
 
 h3 {
   font-size: $h3-font-size;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h4 {
@@ -144,6 +144,17 @@ a {
     background-color: $primary-color;
     color: white;
   }
+
+  &--primary-outlined {
+    background-color: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
 }
 
 .slider-pagination {
@@ -227,6 +238,19 @@ a {
     flex-direction: column;
     row-gap: 8px;
     text-align: center;
+  }
+}
+
+// Services section
+.services-block {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &__box {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
   }
 }
 

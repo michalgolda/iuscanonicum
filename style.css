@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h4 {
@@ -130,6 +130,15 @@ a {
   background-color: #9e2a2b;
   color: white;
 }
+.button--primary-outlined {
+  background-color: transparent;
+  color: #9e2a2b;
+  border: 2px solid #9e2a2b;
+}
+.button--primary-outlined:hover {
+  background-color: #9e2a2b;
+  color: white;
+}
 
 .slider-pagination {
   display: flex;
@@ -204,6 +213,17 @@ a {
   flex-direction: column;
   row-gap: 8px;
   text-align: center;
+}
+
+.services-block {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.services-block__box {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
 }
 
 .icon {

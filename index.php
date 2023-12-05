@@ -82,6 +82,41 @@
                 </div>
             </div>
         </section>
+        <section id="services" class="section">
+            <h2 class="section__heading">Usługi</h2>
+            <div class="services-block container">
+                <div class="services-block__box">
+                    <h3>Prawo małżeńskie</h3>
+                    <p>Donec ut ipsum augue. Fusce pretium urna nibh, et luctus lacus bibendum id. Nullam in dapibus ex, sit amet commodo felis. Nam eu ornare nulla. Praesent consequat.</p>
+                    <a class="button button--primary-outlined" href="#">Szczegóły</a>
+                </div>
+                <div class="services-block__box">
+                    <h3>Pomoc administracyjna</h3>
+                    <p>Donec ut ipsum augue. Fusce pretium urna nibh, et luctus lacus bibendum id. Nullam in dapibus ex, sit amet commodo felis. Nam eu ornare nulla. Praesent consequat.</p>
+                    <a class="button button--primary-outlined" href="#">Szczegóły</a>
+                </div>
+                <div class="services-block__box">
+                    <h3>Kanonizacje</h3>
+                    <p>Donec ut ipsum augue. Fusce pretium urna nibh, et luctus lacus bibendum id. Nullam in dapibus ex, sit amet commodo felis. Nam eu ornare nulla. Praesent consequat.</p>
+                    <a class="button button--primary-outlined" href="#">Szczegóły</a>
+                </div>
+                <div class="services-block__box">
+                    <h3>Przygotowywanie dokumentacji</h3>
+                    <p>Donec ut ipsum augue. Fusce pretium urna nibh, et luctus lacus bibendum id. Nullam in dapibus ex, sit amet commodo felis. Nam eu ornare nulla. Praesent consequat.</p>
+                    <a class="button button--primary-outlined" href="#">Szczegóły</a>
+                </div>
+                <div class="services-block__box">
+                    <h3>Zbieranie materiału dowodowego</h3>
+                    <p>Donec ut ipsum augue. Fusce pretium urna nibh, et luctus lacus bibendum id. Nullam in dapibus ex, sit amet commodo felis. Nam eu ornare nulla. Praesent consequat.</p>
+                    <a class="button button--primary-outlined" href="#">Szczegóły</a>
+                </div>
+                <div class="services-block__box">
+                    <h3>Reprezentacja przed sądem kościelnym</h3>
+                    <p>Donec ut ipsum augue. Fusce pretium urna nibh, et luctus lacus bibendum id. Nullam in dapibus ex, sit amet commodo felis. Nam eu ornare nulla. Praesent consequat.</p>
+                    <a class="button button--primary-outlined" href="#">Szczegóły</a>
+                </div>
+            </div>
+        </section>
     </main>
     <?php get_template_part('template-parts/footer'); ?>
 
