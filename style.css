@@ -226,6 +226,31 @@ a {
   flex-direction: column;
 }
 
+.advantages-block {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 1fr 1fr;
+}
+.advantages-block__box {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+}
+.advantages-block__box .icon {
+  width: 128px;
+  height: 128px;
+  min-width: 128px;
+}
+.advantages-block__box .icon__img {
+  width: 64px;
+  height: 64px;
+}
+.advantages-block__details {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
+}
+
 .icon {
   width: 48px;
   height: 48px;
