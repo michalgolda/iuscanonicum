@@ -272,6 +272,44 @@ a {
   color: white;
 }
 
+.latest-articles-block {
+  display: flex;
+  flex-direction: row;
+  column-gap: 64px;
+  align-items: flex-start;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.article__cover-img {
+  width: 100%;
+  height: auto;
+}
+.article__header {
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column;
+}
+.article__overline-heading {
+  text-transform: uppercase;
+  color: #9e2a2b;
+  font-weight: 300;
+}
+.article__date {
+  color: #8d8d8d;
+}
+.article__ref {
+  width: fit-content;
+  text-decoration: none;
+  color: #143642;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: 2px solid #9e2a2b;
+}
+
 .icon {
   width: 48px;
   height: 48px;

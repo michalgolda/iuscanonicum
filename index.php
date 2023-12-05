@@ -167,6 +167,41 @@
                 </div>
             </div>
         </section>
+        <section id="latest-articles" class="section">
+            <h2 class="section__heading">Najnowsze artykuły, które mogą Cię zainteresować</h2>
+            <div class="latest-articles-block container">
+                <div class="article">
+                    <img class="article__cover-img" src="<?php echo iuscanonicum_get_image_src("article-cover.jpg") ?>" alt="article cover" />
+                    <div class="article__header">
+                        <p class="article__overline-heading">prawo rodzinne</p>
+                        <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
+                        <span class="article__date">20.10.2024</span>
+                    </div>
+                    <p class="article__summary">Praesent egestas lacus vitae est aliquet, et rutrum turpis volutpat. Donec tincidunt vehicula augue sed sagittis. Nullam tempor facilisis ultrices. Aliquam nibh erat, commodo ac ante non, pulvinar dictum felis.</p>
+                    <a class="article__ref" href="#">Przeczytaj więcej</a>
+                </div>
+                <div class="article">
+                    <img class="article__cover-img" src="<?php echo iuscanonicum_get_image_src("article-cover.jpg") ?>" alt="article cover" />
+                    <div class="article__header">
+                        <p class="article__overline-heading">prawo rodzinne</p>
+                        <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
+                        <span class="article__date">20.10.2024</span>
+                    </div>
+                    <p class="article__summary">Praesent egestas lacus vitae est aliquet, et rutrum turpis volutpat. Donec tincidunt vehicula augue sed sagittis. Nullam tempor facilisis ultrices. Aliquam nibh erat, commodo ac ante non, pulvinar dictum felis.</p>
+                    <a class="article__ref" href="#">Przeczytaj więcej</a>
+                </div>
+                <div class="article">
+                    <img class="article__cover-img" src="<?php echo iuscanonicum_get_image_src("article-cover.jpg") ?>" alt="article cover" />
+                    <div class="article__header">
+                        <p class="article__overline-heading">prawo rodzinne</p>
+                        <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
+                        <span class="article__date">20.10.2024</span>
+                    </div>
+                    <p class="article__summary">Praesent egestas lacus vitae est aliquet, et rutrum turpis volutpat. Donec tincidunt vehicula augue sed sagittis. Nullam tempor facilisis ultrices. Aliquam nibh erat, commodo ac ante non, pulvinar dictum felis.</p>
+                    <a class="article__ref" href="#">Przeczytaj więcej</a>
+                </div>
+            </div>
+        </section>
     </main>
     <?php get_template_part('template-parts/footer'); ?>
 

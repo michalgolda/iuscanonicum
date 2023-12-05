@@ -309,6 +309,50 @@ a {
   }
 }
 
+// LatestArticles section
+.latest-articles-block {
+  display: flex;
+  flex-direction: row;
+  column-gap: 64px;
+  align-items: flex-start;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  &__cover-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__header {
+    display: flex;
+    row-gap: 8px;
+    flex-direction: column;
+  }
+
+  &__overline-heading {
+    text-transform: uppercase;
+    color: $primary-color;
+    font-weight: 300;
+  }
+
+  &__date {
+    color: #8d8d8d;
+  }
+
+  &__ref {
+    width: fit-content;
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
 .icon {
   width: 48px;
   height: 48px;
