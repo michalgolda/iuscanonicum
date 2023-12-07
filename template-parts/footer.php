@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="footer__box">
-                <h4>Kontakt</h4>
+                <h5>Kontakt</h5>
                 <ul class="footer__list">
                     <li>
                         <p>al. Beliny Prażmowskiego, 9/331-514 Kraków</p>
@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="footer__box">
-                <h4>Nasze specjalizacje</h4>
+                <h5>Nasze specjalizacje</h5>
                 <ul class="footer__list">
                     <li>
                         <p>Prawo rodzinne</p>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <div class="footer__box">
-                <h4>Menu</h4>
+                <h5>Menu</h5>
                 <?php
                 wp_nav_menu(
                     array(

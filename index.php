@@ -17,7 +17,7 @@
     <main>
         <section id="start" class="container swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide hero">
+                <div class="swiper-slide container hero">
                     <div class="hero__container">
                         <div class="hero__heading">
                             <p class="hero__overline-heading">wiedza</p>
@@ -28,7 +28,7 @@
                     </div>
                     <img class="hero__img" src="<?php echo iuscanonicum_get_image_src('hero-image.jpg'); ?>" alt="hero image" />
                 </div>
-                <div class="swiper-slide hero">
+                <div class="swiper-slide container hero">
                     <div class="hero__container">
                         <div class="hero__heading">
                             <p class="hero__overline-heading">wiedza</p>

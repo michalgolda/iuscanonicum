@@ -10,6 +10,10 @@
 body {
   font-size: $body-font-size;
   font-family: "Amulya", sans-serif;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
 }
 
 h1,
@@ -22,21 +26,46 @@ h4 {
 
 h1 {
   font-size: $h1-font-size;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 36px;
+  }
 }
 
 h2 {
   font-size: $h2-font-size;
   font-weight: 700;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 32px;
+  }
 }
 
 h3 {
   font-size: $h3-font-size;
   font-weight: 700;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 24px;
+  }
 }
 
 h4 {
   font-size: $h4-font-size;
   font-weight: 600;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: $h5-font-size;
+  font-weight: 600;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -52,6 +81,10 @@ a {
   max-width: 1320px;
   padding: 0 32px 0 32px;
   margin: 0 auto;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 16px 0 16px;
+  }
 }
 
 .hamburger {
@@ -63,6 +96,10 @@ a {
 
   @include media-breakpoint-down(lg) {
     display: flex;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 24px;
   }
 
   &__slice {
@@ -78,6 +115,16 @@ a {
   align-items: center;
   padding: 32px;
   justify-content: space-between;
+
+  @include media-breakpoint-down(sm) {
+    padding: 32px 16px 32px 16px;
+  }
+
+  &__logo {
+    @include media-breakpoint-down(sm) {
+      width: 192px;
+    }
+  }
 
   &__menu {
     list-style: none;
@@ -125,6 +172,12 @@ a {
   display: block;
   width: fit-content;
 
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+
   &--primary {
     background-color: $primary-color;
     color: white;
@@ -161,6 +214,10 @@ a {
   align-items: center;
   margin-top: -5%;
 
+  @include media-breakpoint-down(sm) {
+    margin-top: inherit;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -173,6 +230,10 @@ a {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 24px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 15px;
+    }
   }
 
   &__img {
@@ -190,10 +251,6 @@ a {
 
 .swiper-wrapper {
   height: auto !important;
-}
-
-.swiper-slide {
-  padding: 0 32px 0 32px;
 }
 
 .swiper-pagination {
@@ -227,6 +284,10 @@ a {
   display: block;
   width: fit-content;
   margin-top: -32px;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 
 .section {
@@ -237,6 +298,11 @@ a {
 .section__heading {
   margin-bottom: 64px;
   text-align: center;
+  padding: 0 32px 0 32px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 16px 0 16px;
+  }
 }
 
 // Welcome section
@@ -309,6 +375,10 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+  }
+
   &__box {
     display: flex;
     row-gap: 16px;
@@ -324,6 +394,10 @@ a {
 
   @include media-breakpoint-down(xl) {
     gap: 32px;
+  }
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
   }
 
   &__box {
@@ -383,13 +457,20 @@ a {
 
 // LatestArticles section
 .latest-articles-block {
-  display: flex;
-  flex-direction: row;
-  column-gap: 64px;
-  align-items: flex-start;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @include media-breakpoint-down(xl) {
-    column-gap: 32px;
+    gap: 32px;
+  }
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -426,6 +507,13 @@ a {
     font-weight: 500;
     font-size: 20px;
     border-bottom: 2px solid $primary-color;
+    padding-bottom: 2px;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      width: 100%;
+      font-size: 15px;
+    }
   }
 }
 
@@ -447,7 +535,7 @@ a {
   width: 100%;
   height: auto;
 
-  h4 {
+  h5 {
     color: white;
   }
 
@@ -473,6 +561,16 @@ a {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 32px;
+
+    @include media-breakpoint-down(lg) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__secondary {
@@ -486,6 +584,10 @@ a {
     justify-content: space-between;
     padding: 16px 32px 16px 32px;
     font-size: $footer-secondary-content-font-size;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__box {
@@ -493,8 +595,16 @@ a {
     flex-direction: column;
     row-gap: 16px;
 
+    @include media-breakpoint-down(sm) {
+      align-items: center;
+      text-align: center;
+    }
+
     &:first-of-type {
       max-width: 512px;
+      min-width: min-content;
+      width: 100%;
+      flex-shrink: 3.5;
     }
   }
 
@@ -502,6 +612,7 @@ a {
     display: flex;
     flex-direction: row;
     column-gap: 16px;
+    width: fit-content;
   }
 
   &__social-icon {
@@ -526,7 +637,7 @@ a {
   }
 
   &__copyright {
-    color: white;
+    color: white !important;
   }
 
   &__links {
