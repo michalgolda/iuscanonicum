@@ -1,0 +1,1 @@
+<h1 class="section__heading section__heading--bg"><?php echo $args['title'] ?></h1>
