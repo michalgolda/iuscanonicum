@@ -4,12 +4,6 @@
 */
 ?>
 
-<?php
-/*
-Template Name: O nas
-*/
-?>
-
 <!DOCTYPE html>
 <html lang="pl">
 

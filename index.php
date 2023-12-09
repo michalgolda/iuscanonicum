@@ -1,1 +1,3 @@
-<?php include 'template-blog.php';
+<?php the_content(); ?>
+
+Index file
