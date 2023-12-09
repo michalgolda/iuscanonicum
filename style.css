@@ -839,3 +839,46 @@ textarea {
   flex-direction: row;
   width: 100%;
 }
+
+.team-member {
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  margin-bottom: 128px;
+}
+.team-member__img {
+  min-width: 256px;
+  max-width: 360px;
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  flex-shrink: 6;
+}
+.team-member__profession {
+  font-size: 24px;
+  font-weight: 500;
+  color: #9e2a2b;
+}
+.team-member__details {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  flex-shrink: 4;
+  width: 100%;
+}
+.team-member__contact {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.team-member__contact-box {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  flex-direction: row;
+}
+.team-member__contact-box a {
+  color: #4a4a4a;
+  text-decoration: underline;
+}

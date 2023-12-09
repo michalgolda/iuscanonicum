@@ -886,3 +886,53 @@ textarea {
     }
   }
 }
+
+// Team page
+.team-member {
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  margin-bottom: 128px;
+
+  &__img {
+    min-width: 256px;
+    max-width: 360px;
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+    flex-shrink: 6;
+  }
+
+  &__profession {
+    font-size: $h4-font-size;
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  &__details {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex-shrink: 4;
+    width: 100%;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-box {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      flex-direction: row;
+
+      a {
+        color: $text-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
