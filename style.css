@@ -846,6 +846,12 @@ textarea {
   flex-direction: row;
   margin-bottom: 128px;
 }
+@media screen and (max-width: 1024px) {
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .team-member__img {
   min-width: 256px;
   max-width: 360px;
@@ -871,6 +877,11 @@ textarea {
   gap: 16px;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 576px) {
+  .team-member__contact {
+    flex-direction: column;
+  }
 }
 .team-member__contact-box {
   display: flex;
