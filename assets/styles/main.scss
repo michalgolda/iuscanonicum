@@ -168,6 +168,14 @@ textarea {
     }
   }
 
+  &__home-link {
+    height: 56px;
+
+    @include media-breakpoint-down(sm) {
+      height: 33.8px;
+    }
+  }
+
   .menu-item {
     a {
       color: $secondary-color;

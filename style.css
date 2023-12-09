@@ -171,6 +171,14 @@ textarea {
     display: none;
   }
 }
+.header__home-link {
+  height: 56px;
+}
+@media screen and (max-width: 576px) {
+  .header__home-link {
+    height: 33.8px;
+  }
+}
 .header .menu-item a {
   color: #143642;
   display: block;
