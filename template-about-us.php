@@ -21,7 +21,7 @@ Template Name: O nas
 <body class="about-us-page">
     <?php get_template_part('template-parts/header'); ?>
     <main class="container">
-        <?php get_template_part('template-parts/page-bar'); ?>
+        <?php get_template_part('template-parts/page-bar', null, ['name' => 'O nas']); ?>
         <?php get_template_part('template-parts/page-title', null, ['title' => 'O naszej kancelarii słów kilka']); ?>
 
         <img class="about-us-page__img" src="<?php echo iuscanonicum_get_image_src('about-us.jpg') ?>" alt="about us image" />

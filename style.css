@@ -475,11 +475,15 @@ a {
   display: flex;
   row-gap: 8px;
   flex-direction: column;
+  flex-grow: 1;
 }
 .article__overline-heading {
   text-transform: uppercase;
   color: #9e2a2b;
   font-weight: 300;
+}
+.article__summary {
+  display: none;
 }
 .article__date {
   color: #8d8d8d;
@@ -707,5 +711,22 @@ a {
     margin: 0 auto;
     margin-bottom: 32px;
     display: block;
+  }
+}
+
+.article-list {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1024px) {
+  .article-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article-list {
+    grid-template-columns: 1fr;
   }
 }

@@ -192,9 +192,8 @@ Template Name: Strona główna
                     <div class="article__header">
                         <p class="article__overline-heading">prawo rodzinne</p>
                         <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
-                        <span class="article__date">20.10.2024</span>
                     </div>
-                    <p class="article__summary">Praesent egestas lacus vitae est aliquet, et rutrum turpis volutpat. Donec tincidunt vehicula augue sed sagittis. Nullam tempor facilisis ultrices. Aliquam nibh erat, commodo ac ante non, pulvinar dictum felis.</p>
+                    <span class="article__date">20.10.2024</span>
                     <a class="article__ref" href="#">Przeczytaj więcej</a>
                 </div>
                 <div class="article">
@@ -202,9 +201,8 @@ Template Name: Strona główna
                     <div class="article__header">
                         <p class="article__overline-heading">prawo rodzinne</p>
                         <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
-                        <span class="article__date">20.10.2024</span>
                     </div>
-                    <p class="article__summary">Praesent egestas lacus vitae est aliquet, et rutrum turpis volutpat. Donec tincidunt vehicula augue sed sagittis. Nullam tempor facilisis ultrices. Aliquam nibh erat, commodo ac ante non, pulvinar dictum felis.</p>
+                    <span class="article__date">20.10.2024</span>
                     <a class="article__ref" href="#">Przeczytaj więcej</a>
                 </div>
                 <div class="article">
@@ -212,9 +210,8 @@ Template Name: Strona główna
                     <div class="article__header">
                         <p class="article__overline-heading">prawo rodzinne</p>
                         <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
-                        <span class="article__date">20.10.2024</span>
                     </div>
-                    <p class="article__summary">Praesent egestas lacus vitae est aliquet, et rutrum turpis volutpat. Donec tincidunt vehicula augue sed sagittis. Nullam tempor facilisis ultrices. Aliquam nibh erat, commodo ac ante non, pulvinar dictum felis.</p>
+                    <span class="article__date">20.10.2024</span>
                     <a class="article__ref" href="#">Przeczytaj więcej</a>
                 </div>
             </div>
