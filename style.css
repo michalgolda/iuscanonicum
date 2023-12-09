@@ -785,6 +785,7 @@ textarea {
   height: fit-content;
   object-fit: contain;
   flex-shrink: 3;
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .contact-page .content img {
