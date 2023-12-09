@@ -2,7 +2,9 @@
     <div class="footer__primary">
         <div class="footer__primary-content container">
             <div class="footer__box">
-                <img src="<?php echo iuscanonicum_get_image_src('footer-logo.svg'); ?>" width="271" height="48" alt="logo" />
+                <a class="footer__home-link" href="<?php echo get_home_url(); ?>">
+                    <img src="<?php echo iuscanonicum_get_image_src('footer-logo.svg'); ?>" width="271" height="48" alt="logo" />
+                </a>
                 <p>Donec risus justo, euismod id volutpat at, accumsan at nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 <div class="footer__social">
                     <a href="#" class="footer__social-icon">

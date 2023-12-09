@@ -654,6 +654,9 @@ textarea {
   flex-direction: column;
   row-gap: 8px;
 }
+.footer__home-link {
+  height: 48px;
+}
 .footer__copyright {
   color: white !important;
 }
