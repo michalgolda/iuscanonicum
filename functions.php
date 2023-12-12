@@ -16,3 +16,10 @@ function iuscanonicum_get_image_src(string $filename)
 {
     return get_template_directory_uri() . '/assets/images/' . $filename;
 }
+
+function iuscanonicum_blocks_init()
+{
+    register_block_type(__DIR__ . '/blocks/page-bar/build');
+}
+
+add_action('init', 'iuscanonicum_blocks_init');
