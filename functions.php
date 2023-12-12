@@ -20,6 +20,7 @@ function iuscanonicum_get_image_src(string $filename)
 function iuscanonicum_blocks_init()
 {
     register_block_type(__DIR__ . '/blocks/page-bar/build');
+    register_block_type(__DIR__ . '/blocks/page-title/build');
 }
 
 add_action('init', 'iuscanonicum_blocks_init');
