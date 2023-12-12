@@ -12,7 +12,8 @@
 	"attributes": {
 		"title": {
 			"type": "string",
-			"source": "attribute"
+			"source": "html",
+			"selector": "h2"
 		}
 	},
 	"textdomain": "page-bar",
