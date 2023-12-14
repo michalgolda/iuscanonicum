@@ -963,3 +963,16 @@ textarea {
 .overflow--hidden {
   overflow: hidden;
 }
+
+.not-found {
+  margin-top: 64px;
+  max-width: 768px;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.not-found__code {
+  color: #9e2a2b;
+  font-size: 7rem !important;
+}
