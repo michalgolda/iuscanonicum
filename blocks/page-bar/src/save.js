@@ -1,10 +1,10 @@
-import { useBlockProps } from "@wordpress/block-editor";
+import { useBlockProps, RichText } from "@wordpress/block-editor";
 
 export default function save({ attributes }) {
 	return (
 		<div {...useBlockProps.save()}>
 			<div class="wp-block-iuscanonicum-page-bar__box wp-block-iuscanonicum-page-bar__box--title">
-				<h2>{attributes.title}</h2>
+				<RichText.Content tagName="h2" value={attributes.title} />
 			</div>
 			<div class="wp-block-iuscanonicum-page-bar__box wp-block-iuscanonicum-page-bar__box--breadcrumbs">
 				<div class="wp-block-iuscanonicum-page-bar__breadcrumbs">
