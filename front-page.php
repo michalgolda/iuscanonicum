@@ -164,38 +164,7 @@
             </div>
         </div>
     </section>
-    <section id="latest-articles" class="section">
-        <h2 class="section__heading">Najnowsze artykuły, które mogą Cię zainteresować</h2>
-        <div class="latest-articles-block container">
-            <div class="article">
-                <img class="article__cover-img" src="<?php echo iuscanonicum_get_image_src("article-cover.jpg") ?>" alt="article cover" />
-                <div class="article__header">
-                    <p class="article__overline-heading">prawo rodzinne</p>
-                    <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
-                </div>
-                <span class="article__date">20.10.2024</span>
-                <a class="article__ref" href="#">Przeczytaj więcej</a>
-            </div>
-            <div class="article">
-                <img class="article__cover-img" src="<?php echo iuscanonicum_get_image_src("article-cover.jpg") ?>" alt="article cover" />
-                <div class="article__header">
-                    <p class="article__overline-heading">prawo rodzinne</p>
-                    <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
-                </div>
-                <span class="article__date">20.10.2024</span>
-                <a class="article__ref" href="#">Przeczytaj więcej</a>
-            </div>
-            <div class="article">
-                <img class="article__cover-img" src="<?php echo iuscanonicum_get_image_src("article-cover.jpg") ?>" alt="article cover" />
-                <div class="article__header">
-                    <p class="article__overline-heading">prawo rodzinne</p>
-                    <h3 class="article__heading">Analiza Współczesnego Prawa Rodzinnego</h3>
-                </div>
-                <span class="article__date">20.10.2024</span>
-                <a class="article__ref" href="#">Przeczytaj więcej</a>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('template-parts/latest-articles'); ?>
 </main>
 <script type="text/javascript">
     const swiper = new Swiper('.swiper', {
