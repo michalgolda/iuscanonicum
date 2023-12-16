@@ -117,6 +117,9 @@ textarea {
     padding: 0 16px 0 16px;
   }
 }
+.container--dynamic-content {
+  padding-bottom: 128px;
+}
 
 .hamburger {
   display: none;
@@ -369,6 +372,8 @@ textarea {
   display: block;
   width: fit-content;
   margin-top: -32px;
+  position: relative;
+  z-index: 997;
 }
 @media screen and (max-width: 576px) {
   .scroll-down {
@@ -535,23 +540,23 @@ textarea {
   color: white;
 }
 
-.latest-articles-block {
+.articles-block {
   display: grid;
   gap: 64px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 @media screen and (max-width: 1024px) {
-  .latest-articles-block {
-    grid-template-columns: 1fr 1fr;
+  .articles-block {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1200px) {
-  .latest-articles-block {
+  .articles-block {
     gap: 32px;
   }
 }
 @media screen and (max-width: 768px) {
-  .latest-articles-block {
+  .articles-block {
     grid-template-columns: 1fr;
   }
 }
@@ -560,6 +565,8 @@ textarea {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  border: 1px solid #eaeaea;
+  padding: 16px;
 }
 .article__cover-img {
   width: 100%;

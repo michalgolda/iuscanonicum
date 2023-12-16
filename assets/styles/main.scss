@@ -112,6 +112,10 @@ textarea {
   @include media-breakpoint-down(sm) {
     padding: 0 16px 0 16px;
   }
+
+  &--dynamic-content {
+    padding-bottom: 128px;
+  }
 }
 
 .hamburger {
@@ -383,6 +387,8 @@ textarea {
   display: block;
   width: fit-content;
   margin-top: -32px;
+  position: relative;
+  z-index: 997;
 
   @include media-breakpoint-down(sm) {
     display: none;
@@ -561,13 +567,13 @@ textarea {
 }
 
 // LatestArticles section
-.latest-articles-block {
+.articles-block {
   display: grid;
   gap: 64px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 
   @include media-breakpoint-down(lg) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @include media-breakpoint-down(xl) {
@@ -583,6 +589,8 @@ textarea {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  border: 1px solid $articles-border-color;
+  padding: 16px;
 
   &__cover-img {
     width: 100%;

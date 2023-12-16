@@ -1,17 +1,20 @@
-<section id="latest-articles" class="section">
-    <h2 class="section__heading">Najnowsze artykuły, które mogą Cię zainteresować</h2>
+<section id="other-articles" class="section">
+    <h2 class="section__heading">Inne artykuły, które mogą Cię zainteresować</h2>
     <div class="articles-block container">
         <?php
+        $current_post_id = get_the_id();
+
         wp_reset_query();
-        $recent_posts_query_args = [
+        $query_args = [
             'posts_per_page' => 3,
             'order_by' => 'date',
             'order' => 'DESC',
+            'post__not_in' => [$current_post_id]
         ];
-        $recent_posts_query = new WP_Query($recent_posts_query_args);
+        $query = new WP_Query($query_args);
 
-        while ($recent_posts_query->have_posts()) {
-            $recent_posts_query->the_post();
+        while ($query->have_posts()) {
+            $query->the_post();
 
             get_template_part(
                 'template-parts/article',
