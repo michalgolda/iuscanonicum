@@ -1,0 +1,17 @@
+@import "../../../assets/styles/_variables";
+
+.wp-block-iuscanonicum-contact-details {
+	.icon {
+		width: 48px;
+		height: 48px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $primary-color;
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "iuscanonicum/contact-details",
+	"version": "0.0.0",
+	"title": "Contact-details",
+	"category": "widgets",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"email": {
+			"type": "string",
+			"default": "kontakt@iuasnanonicum.pl",
+			"source": "html",
+			"selector": "#wp-block-iuscanonicum-contact-details-email"
+		},
+		"location": {
+			"type": "string",
+			"default": "al. Beliny Prażmowskiego 9/331-514 Kraków",
+			"source": "html",
+			"selector": "#wp-block-iuscanonicum-contact-details-location"
+		},
+		"phoneNumber": {
+			"type": "string",
+			"default": "+48 333 333 333",
+			"source": "html",
+			"selector": "#wp-block-iuscanonicum-contact-details-phoneNumber"
+		},
+		"openHours": {
+			"type": "string",
+			"default": "Pon. – Pt. <br/> 8:00 – 16:00",
+			"source": "html",
+			"selector": "#wp-block-iuscanonicum-contact-details-openHours"
+		}
+	},
+	"textdomain": "contact-details",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

@@ -22,6 +22,7 @@ function iuscanonicum_blocks_init()
 {
     register_block_type(__DIR__ . '/blocks/page-bar/build');
     register_block_type(__DIR__ . '/blocks/page-title/build');
+    register_block_type(__DIR__ . '/blocks/contact-details/build');
 }
 
 add_action('init', 'iuscanonicum_blocks_init');
