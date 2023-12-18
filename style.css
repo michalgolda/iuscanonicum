@@ -93,6 +93,7 @@ textarea {
   outline: none;
   color: #143642;
   font-size: 15px;
+  transition: border 0.25s;
 }
 input::placeholder,
 textarea::placeholder {
@@ -101,6 +102,7 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
   border-color: #143642;
+  transition: border 0.25s;
 }
 
 textarea {
@@ -265,6 +267,10 @@ textarea {
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+  transition: background 0.25s;
+}
+.button:hover {
+  transition: background 0.25s;
 }
 @media screen and (max-width: 576px) {
   .button {
@@ -291,6 +297,9 @@ textarea {
 .button--primary {
   background-color: #9e2a2b;
   color: white;
+}
+.button--primary:hover {
+  background-color: #8a2526;
 }
 .button--primary-outlined {
   background-color: transparent;

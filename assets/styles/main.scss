@@ -90,6 +90,7 @@ textarea {
   outline: none;
   color: $secondary-color;
   font-size: 15px;
+  transition: border $default-transition-duration;
 
   &::placeholder {
     color: #9a9a9a;
@@ -97,6 +98,7 @@ textarea {
 
   &:focus {
     border-color: $secondary-color;
+    transition: border $default-transition-duration;
   }
 }
 
@@ -274,6 +276,11 @@ textarea {
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+  transition: background $default-transition-duration;
+
+  &:hover {
+    transition: background $default-transition-duration;
+  }
 
   @include media-breakpoint-down(sm) {
     width: 100%;
@@ -301,6 +308,10 @@ textarea {
   &--primary {
     background-color: $primary-color;
     color: white;
+
+    &:hover {
+      background-color: darken($primary-color, $amount: 5%);
+    }
   }
 
   &--primary-outlined {
