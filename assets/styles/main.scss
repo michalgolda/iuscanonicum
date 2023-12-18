@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: $body-font-size;
   font-family: "Amulya", sans-serif;
@@ -281,6 +285,19 @@ textarea {
     width: 100%;
   }
 
+  &--scroll-top {
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 32px 64px 0;
+    width: 48px;
+    height: 48px;
+  }
+
   &--primary {
     background-color: $primary-color;
     color: white;
@@ -296,6 +313,10 @@ textarea {
       color: white;
     }
   }
+}
+
+.hidden {
+  display: none;
 }
 
 // Start section

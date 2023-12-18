@@ -1,3 +1,6 @@
+<a id="scroll-top-btn" href="#top" class="button button--primary button--scroll-top hidden">
+    <img src="<?php echo iuscanonicum_get_image_src('up-arrow-icon.svg'); ?>" alt="up arrow icon" />
+</a>
 <footer class="footer">
     <div class="footer__primary">
         <div class="footer__primary-content container">

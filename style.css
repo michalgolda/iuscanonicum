@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   font-family: "Amulya", sans-serif;
@@ -272,6 +276,18 @@ textarea {
 .button--block {
   width: 100%;
 }
+.button--scroll-top {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 32px 64px 0;
+  width: 48px;
+  height: 48px;
+}
 .button--primary {
   background-color: #9e2a2b;
   color: white;
@@ -284,6 +300,10 @@ textarea {
 .button--primary-outlined:hover {
   background-color: #9e2a2b;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 #start {
@@ -412,7 +432,6 @@ textarea {
 }
 
 .contact-block {
-  background-color: #fafafa;
   padding: 64px 0 64px 0;
 }
 .contact-block__content {
