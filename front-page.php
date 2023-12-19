@@ -1,32 +1,7 @@
-<!-- strona główna -->
 <?php get_header(); ?>
 <main>
     <section id="start" class="container swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide container hero">
-                <div class="hero__container">
-                    <div class="hero__heading">
-                        <p class="hero__overline-heading">wiedza</p>
-                        <h1>Twoje prawo, nasza wiedza – pewność na każdym etapie</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi felis, vehicula non pellentesque vitae, condimentum vitae nulla. Mauris at orci ut quam fermentum commodo et sed enim. Nam in consequat augue. Maecenas nisl erat, maximus in auctor eget, rhoncus non erat.</p>
-                    <a class="button button--primary" href="#">Skontaktuj się</a>
-                </div>
-                <img class="hero__img" src="<?php echo iuscanonicum_get_image_src('hero-image.jpg'); ?>" alt="hero image" />
-            </div>
-            <div class="swiper-slide container hero">
-                <div class="hero__container">
-                    <div class="hero__heading">
-                        <p class="hero__overline-heading">wiedza</p>
-                        <h1>Twoje prawo, nasza wiedza – pewność na każdym etapie</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi felis, vehicula non pellentesque vitae, condimentum vitae nulla. Mauris at orci ut quam fermentum commodo et sed enim. Nam in consequat augue. Maecenas nisl erat, maximus in auctor eget, rhoncus non erat.</p>
-                    <a class="button button--primary" href="#">Skontaktuj się</a>
-                </div>
-                <img class="hero__img" src="<?php echo iuscanonicum_get_image_src('hero-image.jpg'); ?>" alt="hero image" />
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
+        <?php get_template_part("template-parts/slider"); ?>
     </section>
     <a class="scroll-down" href="#">
         <img src="<?php echo iuscanonicum_get_image_src('scroll-down-arrow.svg'); ?>" alt="scroll down arrow" />
@@ -170,7 +145,7 @@
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
-
+        autoplay: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true
