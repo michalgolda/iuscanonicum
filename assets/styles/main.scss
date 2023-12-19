@@ -601,7 +601,7 @@ textarea {
 // LatestArticles section
 .articles-block {
   display: grid;
-  gap: 64px;
+  gap: 32px;
   grid-template-columns: repeat(3, 1fr);
 
   @include media-breakpoint-down(lg) {
