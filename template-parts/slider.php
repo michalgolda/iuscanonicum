@@ -3,7 +3,8 @@
     wp_reset_query();
 
     $query_args = [
-        'post_type' => 'slide'
+        'post_type' => 'slide',
+        'post_status' => 'private'
     ];
     $query = new WP_Query($query_args);
     while ($query->have_posts()) :
@@ -14,7 +15,7 @@
             null,
             [
                 'overline-text' => get_field('overline-text'),
-                'title' => get_the_title(),
+                'title' => iuscanonicum_remove_prefix_from_post_title(get_the_title()),
                 'body' => get_the_content(),
                 'image-url' => get_field('image')
             ]
