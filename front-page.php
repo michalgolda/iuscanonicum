@@ -55,47 +55,7 @@
         </div>
     </section>
     <?php get_template_part('template-parts/services'); ?>
-    <section id="advantages" class="section">
-        <h2 class="section__heading">Zalety kancelarii</h2>
-        <div class="advantages-block container">
-            <div class="advantages-block__box">
-                <div class="icon">
-                    <img class="icon__img" src="<?php echo iuscanonicum_get_image_src("dolar-icon.svg") ?>" alt="dolar icon" />
-                </div>
-                <div class="advantages-block__details">
-                    <h3>Przejrzyste rozliczenia</h3>
-                    <p>Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. </p>
-                </div>
-            </div>
-            <div class="advantages-block__box">
-                <div class="icon">
-                    <img class="icon__img" src="<?php echo iuscanonicum_get_image_src("success-icon.svg") ?>" alt="success icon" />
-                </div>
-                <div class="advantages-block__details">
-                    <h3>Proste rozwiązania</h3>
-                    <p>Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. </p>
-                </div>
-            </div>
-            <div class="advantages-block__box">
-                <div class="icon">
-                    <img class="icon__img" src="<?php echo iuscanonicum_get_image_src("target-icon.svg") ?>" alt="target icon" />
-                </div>
-                <div class="advantages-block__details">
-                    <h3>Zaangażowanie</h3>
-                    <p>Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. </p>
-                </div>
-            </div>
-            <div class="advantages-block__box">
-                <div class="icon">
-                    <img class="icon__img" src="<?php echo iuscanonicum_get_image_src("clock-icon.svg") ?>" alt="clock icon" />
-                </div>
-                <div class="advantages-block__details">
-                    <h3>Terminowość</h3>
-                    <p>Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. Phasellus mattis risus eu orci suscipit gravida. Donec cursus laoreet augue. Vivamus lobortis porttitor enim eu pellentesque. Integer id sem ut mi ultricies semper ac mollis ligula. </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('template-parts/advantages'); ?>
     <section id="weCanHelpYou" class="section">
         <div class="weCanHelpYou-block">
             <h2 class="section__heading">Dowiedz się w jaki sposób możemy Ci pomóc</h2>
