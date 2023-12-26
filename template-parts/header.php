@@ -10,7 +10,7 @@
         <?php
         wp_nav_menu(
             array(
-                'theme_location'  => 'primary',
+                'theme_location'  => 'header-menu',
                 'menu_class'      => 'header__menu',
                 'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                 'fallback_cb'     => false,

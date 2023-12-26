@@ -1,7 +1,11 @@
 <?php
 function iuscanonicum_setup()
 {
-    register_nav_menu('primary', esc_html__('Primary menu', 'iuscanonicum'));
+    register_nav_menu('header-menu', 'Menu główne');
+    register_nav_menu('footer-menu', 'Menu w stopce');
+    register_nav_menu('footer-specializations', 'Lista specjalizacji w stopce');
+    register_nav_menu('footer-links', 'Linki w stopce');
+    register_nav_menu('social-links', 'Media społecznościowe');
 }
 add_action('after_setup_theme', 'iuscanonicum_setup');
 
@@ -33,3 +37,22 @@ function iuscanonicum_blocks_init()
 }
 
 add_action('init', 'iuscanonicum_blocks_init');
+
+
+class SocialWalker extends Walker
+{
+    public function walk($elements, $max_depth, ...$args)
+    {
+        $links = [];
+
+        foreach ($elements as $element) {
+            $url = $element->url;
+            $name = $element->post_name;
+            $icon_src = iuscanonicum_get_image_src("{$name}-icon.svg");
+
+            $links[] = "<a class='footer__social-icon' href='{$url}'><img src='{$icon_src}' alt='{$name} icon' /></a>";
+        }
+
+        return join("\n", $links);
+    }
+}

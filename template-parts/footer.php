@@ -8,47 +8,80 @@
                 <a class="footer__home-link" href="<?php echo get_home_url(); ?>">
                     <img src="<?php echo iuscanonicum_get_image_src('footer-logo.svg'); ?>" width="271" height="48" alt="logo" />
                 </a>
-                <p>Donec risus justo, euismod id volutpat at, accumsan at nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                <div class="footer__social">
-                    <a href="#" class="footer__social-icon">
-                        <img src="<?php echo iuscanonicum_get_image_src('facebook-icon.svg'); ?>" alt="facebook icon" />
-                    </a>
-                    <a href="#" class="footer__social-icon">
-                        <img src="<?php echo iuscanonicum_get_image_src('linkedin-icon.svg'); ?>" alt="linkedin icon" />
-                    </a>
-                </div>
+                <p>Kancelaria specjalizuje się w świadczeniu profesjonalnych usług prawnych zgodnie z normami prawa kanonicznego. Nasza misja to zapewnienie kompleksowego wsparcia prawnego, z poszanowaniem wartości etycznych i tradycji Kościoła. </p>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'social-links',
+                        'walker' => new SocialWalker(),
+                        'container' => false,
+                        'menu_class' => 'footer__social'
+                    )
+                );
+                ?>
             </div>
             <div class="footer__box">
                 <h5>Kontakt</h5>
                 <ul class="footer__list">
-                    <li>
-                        <p>al. Beliny Prażmowskiego, 9/331-514 Kraków</p>
-                    </li>
-                    <li>
-                        <p>Tel. +48 322 322 322</p>
-                    </li>
-                    <li>
-                        <p>kontakt@iuascanonicum.pl</p>
-                    </li>
+                    <?php
+                    wp_reset_query();
+
+                    $query_args = [
+                        'post_type' => 'contact',
+                        'post_status' => 'private',
+                        'meta_query' => [
+                            'relation' => 'OR',
+                            [
+                                'key' => 'name',
+                                'value' => 'Lokalizacja'
+                            ],
+                            [
+                                'key' => 'name',
+                                'value' => 'Numer telefonu'
+                            ],
+                            [
+                                'key' => 'name',
+                                'value' => 'E-mail'
+                            ]
+                        ]
+                    ];
+                    $query = new WP_Query($query_args);
+
+                    while ($query->have_posts()) :
+                        $query->the_post();
+
+                        $field_value = get_field('details');
+                        $field_value = str_replace('\n', '<br/>', $field_value);
+
+                        echo '<li><p>' . $field_value . '</p></li>';
+
+                    endwhile;
+
+
+                    wp_reset_postdata();
+                    ?>
                 </ul>
             </div>
             <div class="footer__box">
                 <h5>Nasze specjalizacje</h5>
-                <ul class="footer__list">
-                    <li>
-                        <p>Prawo rodzinne</p>
-                    </li>
-                    <li>
-                        <p>Prawo kanoniczne</p>
-                    </li>
-                </ul>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'footer-specializations',
+                        'menu_class' => 'footer__list',
+                        'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+                        'fallback_cb'     => false,
+                        'container' => false
+                    )
+                )
+                ?>
             </div>
             <div class="footer__box">
                 <h5>Menu</h5>
                 <?php
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'primary',
+                        'theme_location' => 'footer-menu',
                         'menu_class' => 'footer__list',
                         'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                         'fallback_cb'     => false,
@@ -62,10 +95,17 @@
     <div class="footer__secondary">
         <div class="footer__secondary-content container">
             <p class="footer__copyright">2023 © Iuascanonicum.pl</p>
-            <ul class="footer__links">
-                <li><a class="footer__link" href="#">Polityka prywatności</a></li>
-                <li><a class="footer__link" href="#">Polityka ciasteczek</a></li>
-            </ul>
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'footer-links',
+                    'menu_class' => 'footer__links',
+                    'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+                    'fallback_cb'     => false,
+                    'container' => false
+                )
+            )
+            ?>
         </div>
     </div>
 </footer>
