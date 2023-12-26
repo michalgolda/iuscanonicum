@@ -199,6 +199,25 @@ textarea {
     }
   }
 
+  .sub-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid $articles-border-color;
+    padding: 16px;
+    list-style: none;
+    z-index: 222;
+    display: none;
+    height: 0;
+
+    transition: all 0.5s;
+
+    &__show {
+      display: initial;
+      height: auto;
+      transition: all 0.5s;
+    }
+  }
+
   &__nav {
     @include media-breakpoint-down(lg) {
       width: 100%;
