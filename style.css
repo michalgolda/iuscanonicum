@@ -206,13 +206,21 @@ textarea {
   list-style: none;
   z-index: 222;
   display: none;
-  height: 0;
-  transition: all 0.5s;
+  row-gap: 8px;
+  flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  .header .sub-menu {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 8px;
+    display: flex;
+  }
 }
 .header .sub-menu__show {
-  display: initial;
-  height: auto;
-  transition: all 0.5s;
+  display: flex;
 }
 @media screen and (max-width: 1024px) {
   .header__nav {
@@ -225,6 +233,7 @@ textarea {
     background-color: #143642;
     transform: translateX(-100vw);
     transition: transform 0.25s;
+    overflow-y: scroll;
   }
   .header__nav--visible {
     display: block;
@@ -243,6 +252,14 @@ textarea {
 @media screen and (max-width: 576px) {
   .header__home-link {
     height: 33.8px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header .menu-item:has(ul.sub-menu) {
+    background-color: #133440;
+  }
+  .header .menu-item:has(ul.sub-menu) > a:first-of-type {
+    font-weight: 600;
   }
 }
 .header .menu-item a {

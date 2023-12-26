@@ -207,14 +207,20 @@ textarea {
     list-style: none;
     z-index: 222;
     display: none;
-    height: 0;
+    row-gap: 8px;
+    flex-direction: column;
 
-    transition: all 0.5s;
+    @include media-breakpoint-down(lg) {
+      position: relative;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin-top: 8px;
+      display: flex;
+    }
 
     &__show {
-      display: initial;
-      height: auto;
-      transition: all 0.5s;
+      display: flex;
     }
   }
 
@@ -229,6 +235,7 @@ textarea {
       background-color: $secondary-color;
       transform: translateX(-100vw);
       transition: transform $default-transition-duration;
+      overflow-y: scroll;
 
       &--visible {
         display: block;
@@ -251,6 +258,18 @@ textarea {
   }
 
   .menu-item {
+    @include media-breakpoint-down(lg) {
+      &:has(ul.sub-menu) {
+        background-color: darken($secondary-color, $amount: 0.5%);
+
+        & > a {
+          &:first-of-type {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
     a {
       color: $secondary-color;
       display: block;
