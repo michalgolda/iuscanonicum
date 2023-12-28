@@ -227,7 +227,7 @@ textarea {
   &__nav {
     @include media-breakpoint-down(lg) {
       width: 100%;
-      height: calc(100svh - 120px);
+      height: calc(100dvh - 120px);
       z-index: 999;
       position: fixed;
       bottom: 0;
@@ -245,7 +245,7 @@ textarea {
     }
 
     @include media-breakpoint-down(sm) {
-      height: calc(100svh - 97.8px);
+      height: calc(100dvh - 97.8px);
     }
   }
 
