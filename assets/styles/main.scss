@@ -377,6 +377,10 @@ textarea {
   align-items: center;
   justify-content: center;
   row-gap: 64px;
+  @include media-breakpoint-down(sm) {
+    height: calc(100svh - 97.8px);
+    row-gap: 16px;
+  }
 }
 
 .hero {
