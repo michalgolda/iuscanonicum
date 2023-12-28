@@ -465,9 +465,13 @@ textarea {
   position: relative;
   z-index: 997;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: none;
   }
+
+  // @include media-breakpoint-down(sm) {
+  //   display: none;
+  // }
 }
 
 .section {
