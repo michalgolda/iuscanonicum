@@ -235,7 +235,7 @@ textarea {
       background-color: $secondary-color;
       transform: translateX(-100vw);
       transition: transform $default-transition-duration;
-      overflow-y: scroll;
+      overflow-y: auto;
 
       &--visible {
         display: block;
