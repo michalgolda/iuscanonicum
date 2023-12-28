@@ -3,7 +3,7 @@
     <section id="start" class="container swiper">
         <?php get_template_part("template-parts/slider"); ?>
     </section>
-    <a class="scroll-down" href="#">
+    <a class="scroll-down" href="#welcome">
         <img src="<?php echo iuscanonicum_get_image_src('scroll-down-arrow.svg'); ?>" alt="scroll down arrow" />
     </a>
     <section id="welcome" class="section">
