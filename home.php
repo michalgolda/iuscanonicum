@@ -7,25 +7,21 @@ get_header();
 
     <div class="article-list">
         <?php
-        if (have_posts()) :
-            while (have_posts()) :
-                the_post();
+        while (have_posts()) :
+            the_post();
 
-                get_template_part(
-                    'template-parts/article',
-                    null,
-                    [
-                        'category-name' => get_the_category()[0]->name,
-                        'title' => get_the_title(),
-                        'date' => get_the_date(),
-                        'permalink' => get_the_permalink()
+            get_template_part(
+                'template-parts/article',
+                null,
+                [
+                    'category-name' => get_the_category()[0]->name,
+                    'title' => get_the_title(),
+                    'date' => get_the_date(),
+                    'permalink' => get_the_permalink()
 
-                    ]
-                );
-            endwhile;
-        else :
-            _e('Brak postów.', 'iuscnanonicum');
-        endif;
+                ]
+            );
+        endwhile;
         ?>
     </div>
 </main>
