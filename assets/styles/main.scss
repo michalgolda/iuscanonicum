@@ -296,7 +296,7 @@ textarea {
   }
 
   .current-menu-item {
-    a {
+    & > a {
       color: $primary-color !important;
       background-color: $gray-color !important;
       font-weight: 600;
@@ -377,6 +377,7 @@ textarea {
   align-items: center;
   justify-content: center;
   row-gap: 64px;
+
   @include media-breakpoint-down(sm) {
     height: calc(100svh - 97.8px);
     row-gap: 16px;
@@ -950,6 +951,7 @@ textarea {
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 64px;
 
   @include media-breakpoint-down(lg) {
     grid-template-columns: 1fr 1fr;
@@ -1064,6 +1066,8 @@ textarea {
     height: fit-content;
     object-fit: contain;
     flex-shrink: 6;
+    position: sticky;
+    top: 32px;
   }
 
   &__profession {
