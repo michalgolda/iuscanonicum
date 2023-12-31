@@ -89,6 +89,13 @@ function iuscanonicum_widgets_init()
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>'
     ]);
+
+    register_sidebar([
+        'id' => 'iuscanonicum-footer-text-area',
+        'name' => 'Stopka (Obszar tekstowy)',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>'
+    ]);
 }
 
 function iuscanonicum_rest_api_init()

@@ -8,7 +8,7 @@
                 <a class="footer__home-link" href="<?php echo get_home_url(); ?>">
                     <img src="<?php echo iuscanonicum_get_image_src('footer-logo.svg'); ?>" width="271" height="48" alt="logo" />
                 </a>
-                <p>Kancelaria specjalizuje się w świadczeniu profesjonalnych usług prawnych zgodnie z normami prawa kanonicznego. Nasza misja to zapewnienie kompleksowego wsparcia prawnego, z poszanowaniem wartości etycznych i tradycji Kościoła. </p>
+                <?php dynamic_sidebar('iuscanonicum-footer-text-area'); ?>
                 <?php
                 wp_nav_menu(
                     array(
