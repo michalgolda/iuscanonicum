@@ -54,7 +54,7 @@ function iuscanonicum_widgets_init()
         'before_widget' => '<div id="%1$s" class="widget section__heading %2$s">',
         'after_widget' => '</div>'
     ]);
-    
+
     register_sidebar([
         'id' => 'iuscanonicum-front-page-welcome-section-body',
         'name' => 'Strona główna (Ciało sekcji "welcome")',
@@ -72,6 +72,20 @@ function iuscanonicum_widgets_init()
     register_sidebar([
         'id' => 'iuscanonicum-front-pagewe-can-help-you-section-body',
         'name' => 'Strona główna (Ciało sekcji "weCanHelpYou")',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>'
+    ]);
+
+    register_sidebar([
+        'id' => 'iuscanonicum-contact-details',
+        'name' => 'Dane kontaktowe',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>'
+    ]);
+
+    register_sidebar([
+        'id' => 'iuscanonicum-footer-contact-details',
+        'name' => 'Dane kontaktowe (Stopka)',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>'
     ]);

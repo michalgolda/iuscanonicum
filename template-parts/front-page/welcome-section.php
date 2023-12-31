@@ -5,5 +5,5 @@
             <?php dynamic_sidebar('iuscanonicum-front-page-welcome-section-body'); ?>
         </div>
     </div>
-    <?php get_template_part('template-parts/contact-block'); ?>
+    <?php dynamic_sidebar('iuscanonicum-contact-details'); ?>
 </section>

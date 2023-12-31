@@ -22,45 +22,7 @@
             </div>
             <div class="footer__box">
                 <h5>Kontakt</h5>
-                <ul class="footer__list">
-                    <?php
-                    wp_reset_query();
-
-                    $query_args = [
-                        'post_type' => 'contact',
-                        'post_status' => 'private',
-                        'meta_query' => [
-                            'relation' => 'OR',
-                            [
-                                'key' => 'name',
-                                'value' => 'Lokalizacja'
-                            ],
-                            [
-                                'key' => 'name',
-                                'value' => 'Numer telefonu'
-                            ],
-                            [
-                                'key' => 'name',
-                                'value' => 'E-mail'
-                            ]
-                        ]
-                    ];
-                    $query = new WP_Query($query_args);
-
-                    while ($query->have_posts()) :
-                        $query->the_post();
-
-                        $field_value = get_field('details');
-                        $field_value = str_replace('\n', '<br/>', $field_value);
-
-                        echo '<li><p>' . $field_value . '</p></li>';
-
-                    endwhile;
-
-
-                    wp_reset_postdata();
-                    ?>
-                </ul>
+                <?php dynamic_sidebar('iuscanonicum-footer-contact-details'); ?>
             </div>
             <div class="footer__box">
                 <h5>Nasze specjalizacje</h5>

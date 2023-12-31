@@ -842,6 +842,10 @@ textarea {
     list-style: none;
     flex-direction: column;
     row-gap: 8px;
+  
+    & > li {
+      color: $footer-text-color;
+    }
   }
 
   &__home-link {
