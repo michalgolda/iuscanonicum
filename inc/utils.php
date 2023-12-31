@@ -10,3 +10,8 @@ function iuscanonicum_remove_prefix_from_post_title($title)
     $exploded_title = explode(':', $title);
     return $exploded_title[1];
 }
+
+function iuscanonicum_get_permalink($path)
+{
+    return get_home_url() . $path;
+}

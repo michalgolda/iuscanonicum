@@ -1,12 +1,11 @@
-<section id="advantages" class="section">
-    <h2 class="section__heading">Zalety kancelarii</h2>
-    <div class="advantages-block container">
+<section id="services" class="section">
+    <h2 class="section__heading">Usługi</h2>
+    <div class="services-block container">
         <?php
         wp_reset_query();
 
         $query_args = [
-            'post_type' => 'advantage',
-            'post_status' => 'private'
+            'post_type' => 'service',
         ];
         $query = new WP_Query($query_args);
 
@@ -14,12 +13,12 @@
             $query->the_post();
 
             get_template_part(
-                'template-parts/advantage',
+                'template-parts/front-page/service-box',
                 null,
                 [
                     'name' => get_field('name'),
                     'description' => get_field('description'),
-                    'icon-src' => iuscanonicum_get_image_src(get_field('icon-file-name'))
+                    'permalink' => get_the_permalink()
                 ]
             );
         endwhile;

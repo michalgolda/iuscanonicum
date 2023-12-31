@@ -7,7 +7,7 @@
         <div>
             <?php echo $args['body'] ?>
         </div>
-        <a class="button button--primary" href="<?php echo get_home_url() . '/kontakt'; ?>">Skontaktuj się</a>
+        <a class="button button--primary" href="<?php echo iuscanonicum_get_permalink('/kontakt'); ?>">Skontaktuj się</a>
     </div>
     <img class="hero__img" src="<?php echo $args['image-url']; ?>" alt="hero image" />
 </div>
