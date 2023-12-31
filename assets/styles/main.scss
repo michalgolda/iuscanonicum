@@ -97,7 +97,7 @@ textarea {
   }
 
   &:focus {
-    border-color: $secondary-color;
+    border-color: $primary-color;
     transition: border $default-transition-duration;
   }
 }
@@ -360,6 +360,16 @@ textarea {
     &:hover {
       background-color: $primary-color;
       color: white;
+    }
+
+    &:disabled {
+      border-color: $footer-text-color;
+      color: $footer-text-color;
+
+      &:hover {
+        background-color: transparent;
+        color: $footer-text-color;
+      }
     }
   }
 }
@@ -625,7 +635,7 @@ textarea {
 #weCanHelpYou {
   background-color: $secondary-color;
 
-  .section__heading {
+  h2 {
     color: white;
   }
 }
@@ -964,7 +974,7 @@ textarea {
 }
 
 // Contact page
-.contact-page {
+.page-template-contact {
   .contact-block {
     background-color: transparent;
     padding: 0;
@@ -976,6 +986,7 @@ textarea {
     flex-direction: row;
     gap: 32px;
     margin-top: 128px;
+    margin-bottom: 64px;
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
