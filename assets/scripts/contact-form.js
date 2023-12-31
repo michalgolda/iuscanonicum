@@ -17,8 +17,8 @@ const MESSAGES = {
 };
 const MESSAGE_VISIBILE_TIME = 7000;
 
-const sendContactRequest = (payload) =>
-  fetch(REST_CONTACT_ENDPOINT, {
+const sendContactRequest = (payload, nonce) =>
+  fetch(`${REST_CONTACT_ENDPOINT}?nonce=${nonce}`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -63,10 +63,11 @@ formElm.addEventListener("submit", (e) => {
     topic: formData.get("topic"),
     content: formData.get("content"),
   };
+  const nonce = formData.get("nonce");
 
   enableRateLimit(submitter);
 
-  sendContactRequest(payload)
+  sendContactRequest(payload, nonce)
     .then((res) => {
       if (res.ok) {
         showSuccessMessage();

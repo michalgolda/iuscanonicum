@@ -22,6 +22,7 @@ wp_enqueue_script(
         <div class="form-wrapper">
             <?php dynamic_sidebar('iuscanonicum-contact-page-text-area'); ?>
             <form id="contact-form" class="form" autocomplete="off">
+                <input type="hidden" name="nonce" value="<?php echo wp_create_nonce('iuscanonicum-contact-form'); ?>" />
                 <div class="form__group">
                     <input type="text" name="firstName" placeholder="Imię" required />
                     <input type="text" name="lastName" placeholder="Nazwisko" required />
