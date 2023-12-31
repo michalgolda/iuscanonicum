@@ -1099,6 +1099,10 @@ textarea {
     flex-shrink: 6;
     position: sticky;
     top: 32px;
+
+    @include media-breakpoint-down(lg) {
+      position: initial;
+    }
   }
 
   &__profession {
