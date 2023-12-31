@@ -1,9 +1,6 @@
 {
 	"name": "contact-details",
-	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
-	"license": "GPL-2.0-or-later",
+	"version": "0.0.0",
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
@@ -16,5 +13,9 @@
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^26.19.0"
+	},
+	"dependencies": {
+		"@svgr/webpack": "^8.1.0",
+		"url-loader": "^4.1.1"
 	}
 }
