@@ -19,7 +19,7 @@ wp_enqueue_script(
         <img src="<?php echo iuscanonicum_get_image_src('google-map.jpg'); ?>" alt="google map" />
         <div class="form-wrapper">
             <?php dynamic_sidebar('iuscanonicum-contact-page-text-area'); ?>
-            <form id="contact-form" class="form">
+            <form id="contact-form" class="form" autocomplete="off">
                 <div class="form__group">
                     <input type="text" name="firstName" placeholder="Imię" required />
                     <input type="text" name="lastName" placeholder="Nazwisko" required />
