@@ -25,6 +25,8 @@
                 <a href="<?php echo $args['skill-prove-document-url']; ?>">Potwierdzenie uprawnień</a>
             </div>
         </div>
-        <?php echo $args['description']; ?>
+        <div class="post-content">
+            <?php echo $args['description']; ?>
+        </div>
     </div>
 </div>

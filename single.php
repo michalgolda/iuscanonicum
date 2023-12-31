@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="container">
+<main class="container post-content">
     <?php get_template_part('template-parts/page-bar', null, ['name' => 'Blog']); ?>
     <?php get_template_part('template-parts/page-title', null, ['title' => get_the_title()]); ?>
 
