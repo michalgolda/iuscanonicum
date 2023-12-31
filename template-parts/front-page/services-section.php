@@ -16,7 +16,7 @@
                 'template-parts/front-page/service-box',
                 null,
                 [
-                    'name' => get_field('name'),
+                    'name' => get_the_title(),
                     'description' => get_field('description'),
                     'permalink' => get_the_permalink()
                 ]
