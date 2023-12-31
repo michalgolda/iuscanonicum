@@ -1,4 +1,5 @@
 <?php
+require_once 'inc/social-walker.php';
 require_once 'inc/rest-contact-controller.php';
 {
     register_nav_menu('header-menu', 'Menu główne');

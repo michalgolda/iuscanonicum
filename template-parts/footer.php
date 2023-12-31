@@ -13,7 +13,7 @@
                 wp_nav_menu(
                     array(
                         'theme_location' => 'social-links',
-                        'walker' => new SocialWalker(),
+                        'walker' => new IuscanonicumSocialWalker(),
                         'container' => false,
                         'menu_class' => 'footer__social'
                     )
