@@ -6,9 +6,11 @@ Template Name: Kontakt
 get_header();
 
 wp_enqueue_script(
-    'iuscanonicum-contact-form', 
-    get_template_directory_uri().'/assets/scripts/contact-form.js', 
-    [], false, true
+    'iuscanonicum-contact-form',
+    get_template_directory_uri() . '/assets/scripts/contact-form.js',
+    [],
+    false,
+    true
 );
 ?>
 
