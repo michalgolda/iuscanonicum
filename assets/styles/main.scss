@@ -1008,6 +1008,26 @@ textarea {
     row-gap: 16px;
     flex-direction: column;
 
+    &__message {
+      width: 100%;
+      display: block;
+      padding: 16px;
+      text-align: center;
+      color: white;
+
+      &--success {
+        background-color: $success-message-color;
+      }
+
+      &--error {
+        background-color: $error-message-color;
+      }
+
+      &--hidden {
+        display: none;
+      }
+    }
+
     &__group {
       display: flex;
       gap: 16px;

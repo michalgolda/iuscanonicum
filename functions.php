@@ -1,5 +1,5 @@
 <?php
-function iuscanonicum_setup()
+require_once 'inc/rest-contact-controller.php';
 {
     register_nav_menu('header-menu', 'Menu główne');
     register_nav_menu('footer-menu', 'Menu w stopce');
@@ -37,23 +37,10 @@ function iuscanonicum_blocks_init()
     register_block_type(__DIR__ . '/blocks/contact-details/build');
 }
 
-add_action('init', 'iuscanonicum_blocks_init');
-
-
-class SocialWalker extends Walker
+function iuscanonicum_rest_api_init()
 {
-    public function walk($elements, $max_depth, ...$args)
-    {
-        $links = [];
-
-        foreach ($elements as $element) {
-            $url = $element->url;
-            $name = $element->post_name;
-            $icon_src = iuscanonicum_get_image_src("{$name}-icon.svg");
-
-            $links[] = "<a class='footer__social-icon' href='{$url}'><img src='{$icon_src}' alt='{$name} icon' /></a>";
-        }
-
-        return join("\n", $links);
-    }
+    $contactController = new IuscanonicumRestContactController();
+    $contactController->register_routes();
 }
+
+add_action('rest_api_init', 'iuscanonicum_rest_api_init');
