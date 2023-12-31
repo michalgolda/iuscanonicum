@@ -12,5 +12,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <?php get_template_part('template-parts/header') ?>
