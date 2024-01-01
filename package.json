@@ -14,6 +14,7 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@wordpress/create-block": "^4.31.0"
+    "@wordpress/create-block": "^4.31.0",
+    "gulp-clean-css": "^4.3.0"
   }
 }
