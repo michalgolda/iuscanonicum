@@ -1,7 +1,8 @@
 <?php
 require_once 'inc/utils.php';
 require_once 'inc/social-walker.php';
-require_once 'inc/rest-contact-controller.php';
+require_once 'inc/contact-form/rest-controller.php';
+require_once 'inc/contact-form/settings.php';
 
 function iuscanonicum_after_setup_theme()
 {
@@ -102,6 +103,13 @@ function iuscanonicum_rest_api_init()
 {
     $contactController = new IuscanonicumRestContactController();
     $contactController->register_routes();
+    var_dump($contactController->get_recipients());
+}
+
+function iuscanonicum_admin_init()
+{
+    $contactFormSettings = new IuscanonicumContactFormSettings();
+    $contactFormSettings->init();
 }
 
 add_action('after_setup_theme', 'iuscanonicum_after_setup_theme');
@@ -109,3 +117,4 @@ add_action('wp_enqueue_scripts', 'iuscanonicum_enqueue_scripts');
 add_action('init', 'iuscanonicum_blocks_init');
 add_action('widgets_init', 'iuscanonicum_widgets_init');
 add_action('rest_api_init', 'iuscanonicum_rest_api_init');
+add_action('admin_init', 'iuscanonicum_admin_init');

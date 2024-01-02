@@ -70,10 +70,7 @@ class IuscanonicumRestContactController
         $message .= $params['content'] . "\n\n";
         $message .= "Wiadomość została wygenerowana automatycznie przez system na podstawie danych przesłanych przez formularz kontaktowy. Proszę na nią nie odpowiadać.";
 
-        // Get all WP Mail Smtp plugin options
-        $options = get_option('wp_mail_smtp');
-
-        $to = $options['mail']['from_email'];
+        $to = $this->get_recipients();
 
         $result = wp_mail($to, $params['topic'], $message);
         if (!$result) {
@@ -81,5 +78,13 @@ class IuscanonicumRestContactController
         }
 
         return $result;
+    }
+
+    public function get_recipients()
+    {
+        $option_value = get_option('iuscanonicum_contact_form_recipients');
+        $recipients = explode("\n", $option_value);
+
+        return $recipients;
     }
 }
