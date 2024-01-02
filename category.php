@@ -31,5 +31,6 @@ $page_title .= strtolower($category->name);
         endwhile;
         ?>
     </div>
+    <?php echo iuscanonicum_paginate_links(); ?>
 </main>
 <?php get_footer() ?>
