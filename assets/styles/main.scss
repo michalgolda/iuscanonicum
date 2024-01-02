@@ -1174,3 +1174,34 @@ textarea {
     margin-bottom: 16px;
   }
 }
+
+.pagination {
+  width: fit-content;
+  display: flex;
+  column-gap: 8px;
+  margin: 64px auto;
+
+  .page-numbers {
+    color: $text-color;
+
+    &:not(.prev,.next)
+    {
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $gray-color;
+    }
+  }
+
+  .current {
+    color: $secondary-color;
+    font-weight: bold;
+
+    &:not(.prev, .next) {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+}
