@@ -71,6 +71,8 @@ formElm.addEventListener("submit", (e) => {
     .then((res) => {
       if (res.ok) {
         showSuccessMessage();
+
+        formElm.reset();
       } else {
         showErrorMessage();
       }
@@ -78,7 +80,6 @@ formElm.addEventListener("submit", (e) => {
       disableRateLimit(submitter);
     })
     .catch(() => {
-      console.log(error);
       showErrorMessage();
       disableRateLimit(submitter);
     });
