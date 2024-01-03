@@ -32,10 +32,4 @@ class IuscanonicumContactFormSettings
     {
         require_once __DIR__ . '/settings-callback.php';
     }
-
-    public function validation_callback($input)
-    {
-        var_dump($input);
-        exit;
-    }
 }

@@ -103,7 +103,6 @@ function iuscanonicum_rest_api_init()
 {
     $contactController = new IuscanonicumRestContactController();
     $contactController->register_routes();
-    var_dump($contactController->get_recipients());
 }
 
 function iuscanonicum_admin_init()
