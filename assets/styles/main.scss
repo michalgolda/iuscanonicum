@@ -493,6 +493,11 @@ textarea {
 .section {
   margin-top: 256px;
   margin-bottom: 256px;
+
+  &:not(.home) {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
 }
 
 .section__heading {
