@@ -988,6 +988,12 @@ textarea {
   }
 }
 
+
+.content {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 // Contact page
 .page-template-contact {
   .contact-block {
@@ -1000,8 +1006,6 @@ textarea {
     display: flex;
     flex-direction: row;
     gap: 32px;
-    margin-top: 128px;
-    margin-bottom: 64px;
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
@@ -1173,12 +1177,6 @@ textarea {
   &__code {
     color: $primary-color;
     font-size: 7rem !important;
-  }
-}
-
-.post-content {
-  p {
-    margin-bottom: 16px;
   }
 }
 
