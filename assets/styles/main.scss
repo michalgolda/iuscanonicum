@@ -95,6 +95,7 @@ textarea {
   color: $secondary-color;
   font-size: 15px;
   transition: border $default-transition-duration;
+  border-radius: 0;
 
   &::placeholder {
     color: #9a9a9a;
