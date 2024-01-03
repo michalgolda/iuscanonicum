@@ -6,6 +6,7 @@
 
         $query_args = [
             'post_type' => 'service',
+            'posts_per_page' => 6
         ];
         $query = new WP_Query($query_args);
 
