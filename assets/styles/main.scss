@@ -107,6 +107,10 @@ textarea {
   }
 }
 
+input[type="checkbox"] {
+  border-radius: 0;
+}
+
 textarea {
   resize: vertical;
   max-height: 512px;
