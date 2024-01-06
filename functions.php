@@ -28,6 +28,7 @@ function iuscanonicum_blocks_init()
     register_block_type(__DIR__ . '/blocks/page-bar/build');
     register_block_type(__DIR__ . '/blocks/page-title/build');
     register_block_type(__DIR__ . '/blocks/contact-details/build');
+    register_block_type(__DIR__ . '/blocks/banner/build');
 }
 
 function iuscanonicum_widget_init()

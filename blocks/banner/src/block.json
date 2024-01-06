@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "iuscanonicum/banner",
+	"version": "0.0.0",
+	"title": "Banner",
+	"category": "widgets",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"selector": ".wp-block-iuscanonicum-banner__title",
+			"source": "html",
+			"type": "string"
+		},
+		"description": {
+			"selector": ".wp-block-iuscanonicum-banner__description",
+			"source": "html",
+			"type": "string"
+		},
+		"buttonLabel": {
+			"selector": ".wp-block-iuscanonicum-banner__button",
+			"source": "html",
+			"type": "string"
+		},
+		"buttonLink": {
+			"selector": ".wp-block-iuscanonicum-banner__button",
+			"source": "attribute",
+			"type": "string",
+			"attribute": "href"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

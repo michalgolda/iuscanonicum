@@ -1214,3 +1214,12 @@ textarea {
     }
   }
 }
+
+.responsive-img {
+  @include media-breakpoint-down(md) {
+    figure {
+      float: initial !important;
+      margin: 16px auto !important;
+    }
+  }
+}
