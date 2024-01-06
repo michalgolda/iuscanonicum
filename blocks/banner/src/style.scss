@@ -4,12 +4,25 @@
 	width: 100%;
 	height: auto;
 	display: block;
-	background-color: $gray-color;
 	padding-top: 64px;
 	padding-bottom: 64px;
 	text-align: center;
 
-	@extend .container;
+	&--light {
+		background-color: $gray-color;
+	}
+
+	&--dark {
+		background-color: $secondary-color;
+		
+		p, h2 {
+			color: white;
+		}
+	}
+
+	&__container {
+		@extend .container;
+	}
 
 	&__title {
 		margin-top: 0;

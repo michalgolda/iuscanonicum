@@ -7,7 +7,7 @@
     <?php get_template_part('template-parts/front-page/welcome-section'); ?>
     <?php get_template_part('template-parts/front-page/services-section'); ?>
     <?php get_template_part('template-parts/front-page/advantages-section'); ?>
-    <?php get_template_part('template-parts/front-page/we-can-help-you-section'); ?>
+    <?php get_template_part('template-parts/front-page/banner-section'); ?>
     <?php get_template_part('template-parts/latest-articles'); ?>
 </main>
 <script type="text/javascript">

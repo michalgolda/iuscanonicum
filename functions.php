@@ -31,16 +31,6 @@ function iuscanonicum_blocks_init()
     register_block_type(__DIR__ . '/blocks/banner/build');
 }
 
-function iuscanonicum_widget_init()
-{
-    register_sidebar([
-        'id' => 'iuscanonicum-contact-page-text-area',
-        'name' => 'Strona kontaktowa (obszar tekstowy)',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>'
-    ]);
-}
-
 function iuscanonicum_widgets_init()
 {
     register_sidebar([
@@ -65,15 +55,8 @@ function iuscanonicum_widgets_init()
     ]);
 
     register_sidebar([
-        'id' => 'iuscanonicum-front-page-we-can-help-you-section-heading',
-        'name' => 'Strona główna (Nagłówek sekcji "weCanHelpYou")',
-        'before_widget' => '<div id="%1$s" class="widget section__heading %2$s">',
-        'after_widget' => '</div>'
-    ]);
-
-    register_sidebar([
-        'id' => 'iuscanonicum-front-pagewe-can-help-you-section-body',
-        'name' => 'Strona główna (Ciało sekcji "weCanHelpYou")',
+        'id' => 'iuscanonicum-front-page-banner',
+        'name' => 'Strona główna (Banner)',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>'
     ]);

@@ -41,7 +41,24 @@ const usePages = () => {
 	return pages;
 };
 
+const ThemeSelectControl = (props) => (
+	<SelectControl label="Wybierz motyw" {...props} />
+);
+
 export default function Edit({ attributes, setAttributes }) {
+	const themes = [
+		{
+			label: "Jasny",
+			value: "wp-block-iuscanonicum-banner--light",
+		},
+		{
+			label: "Ciemny",
+			value: "wp-block-iuscanonicum-banner--dark",
+		},
+	];
+	const { className: blockClassName, ...blockProps } = useBlockProps();
+	const className = `${blockClassName} ${attributes.themeClassName}`;
+
 	const pages = usePages();
 	const [useExternalLink, setUseExternalLink] = useState(false);
 
@@ -49,6 +66,11 @@ export default function Edit({ attributes, setAttributes }) {
 		<>
 			<InspectorControls>
 				<PanelBody>
+					<ThemeSelectControl
+						options={themes}
+						value={attributes.themeClassName}
+						onChange={(themeClassName) => setAttributes({ themeClassName })}
+					/>
 					<ToggleControl
 						label="Użyj zewnętrznego odnośnika"
 						checked={useExternalLink}
@@ -70,33 +92,40 @@ export default function Edit({ attributes, setAttributes }) {
 					)}
 				</PanelBody>
 			</InspectorControls>
-			<div {...useBlockProps()}>
-				<RichText
-					tagName="h2"
-					className="wp-block-iuscanonicum-banner__title"
-					value={attributes.title}
-					allowedFormats={["core/bold"]}
-					onChange={(title) => setAttributes({ title })}
-					placeholder="Ustaw tytuł"
+			<div {...blockProps} className={className}>
+				<input
+					type="hidden"
+					name="wp-block-iuscanonicum-banner-theme-class-name"
+					value={attributes.themeClassName}
 				/>
-				<RichText
-					tagName="p"
-					className="wp-block-iuscanonicum-banner__description"
-					value={attributes.description}
-					allowedFormats={["core/regular"]}
-					onChange={(description) => setAttributes({ description })}
-					placeholder="Ustaw opis"
-				/>
-				<RichText
-					tagName="a"
-					className="wp-block-iuscanonicum-banner__button button button--primary"
-					href={attributes.buttonLink}
-					withoutInteractiveFormating
-					value={attributes.buttonLabel}
-					allowedFormats={["core/regular"]}
-					onChange={(buttonLabel) => setAttributes({ buttonLabel })}
-					placeholder="Ustaw etykietę"
-				/>
+				<div className="wp-block-iuscanonicum-banner__container">
+					<RichText
+						tagName="h2"
+						className="wp-block-iuscanonicum-banner__title"
+						value={attributes.title}
+						allowedFormats={["core/bold"]}
+						onChange={(title) => setAttributes({ title })}
+						placeholder="Ustaw tytuł"
+					/>
+					<RichText
+						tagName="p"
+						className="wp-block-iuscanonicum-banner__description"
+						value={attributes.description}
+						allowedFormats={["core/regular"]}
+						onChange={(description) => setAttributes({ description })}
+						placeholder="Ustaw opis"
+					/>
+					<RichText
+						tagName="a"
+						className="wp-block-iuscanonicum-banner__button button button--primary"
+						href={attributes.buttonLink}
+						withoutInteractiveFormating
+						value={attributes.buttonLabel}
+						allowedFormats={["core/regular"]}
+						onChange={(buttonLabel) => setAttributes({ buttonLabel })}
+						placeholder="Ustaw etykietę"
+					/>
+				</div>
 			</div>
 		</>
 	);
