@@ -772,6 +772,10 @@ textarea {
   a {
     text-decoration: none;
     color: $footer-text-color;
+
+    &:hover {
+      color: darken($footer-text-color, $amount: 15%);
+    }
   }
 
   &__primary {
@@ -872,6 +876,10 @@ textarea {
 
   &__copyright {
     color: white !important;
+  
+    @include media-breakpoint-down(sm) {
+      order: -1;
+    }
   }
 
   &__links {
