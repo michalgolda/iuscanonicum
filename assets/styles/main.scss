@@ -475,7 +475,6 @@ textarea {
   left: inherit !important;
 
   @include media-breakpoint-down(sm) {
-    padding-top: 32px;
     padding-bottom: 32px;
   }
 
