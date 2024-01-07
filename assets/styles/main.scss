@@ -27,7 +27,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Inter", sans-serif;
   color: $secondary-color;
 }
@@ -330,7 +332,6 @@ textarea {
   }
 
   @include media-breakpoint-down(sm) {
-    width: 100%;
     text-align: center;
     font-size: 13px;
   }
@@ -456,6 +457,10 @@ textarea {
 
 .swiper-wrapper {
   height: auto !important;
+
+  @include media-breakpoint-down(sm) {
+    flex-grow: 1;
+  }
 }
 
 .swiper-pagination {
@@ -468,6 +473,11 @@ textarea {
   top: inherit !important;
   bottom: inherit !important;
   left: inherit !important;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &-bullet {
     width: 12px !important;
@@ -734,9 +744,12 @@ textarea {
     border-bottom: 2px solid $primary-color;
     padding-bottom: 2px;
 
+    &:hover {
+      color: lighten($secondary-color, $amount: 10%);
+    }
+
     @include media-breakpoint-down(sm) {
       text-align: center;
-      width: 100%;
       font-size: 15px;
     }
   }
