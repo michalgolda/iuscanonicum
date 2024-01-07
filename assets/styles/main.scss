@@ -828,8 +828,9 @@ textarea {
     padding: 16px 32px 16px 32px;
     font-size: $footer-secondary-content-font-size;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       flex-direction: column;
+      gap: 8px;
     }
   }
 
