@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY >= headerElm.clientHeight) {
-      btnElm.classList.remove("hidden");
+      btnElm.classList.remove("button--scroll-top--hidden");
     } else {
-      btnElm.classList.add("hidden");
+      btnElm.classList.add("button--scroll-top--hidden");
     }
   });
 });
