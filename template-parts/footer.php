@@ -56,7 +56,7 @@
     </div>
     <div class="footer__secondary">
         <div class="footer__secondary-content container">
-            <p class="footer__copyright"><?php echo date('Y'); ?> © Iuascanonicum.pl</p>
+            <p class="footer__copyright"><?php echo date('Y'); ?> © Iuascanonicum.pl | <span>Realizacja <a href="https://michalgolda.com">michalgolda.com</a></span></p>
             <?php
             wp_nav_menu(
                 array(
