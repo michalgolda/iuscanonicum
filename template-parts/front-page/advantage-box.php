@@ -1,4 +1,4 @@
-<div class="advantages-block__box">
+<div class="advantages-block__box" data-aos="zoom-in" data-aos-duration="500">
     <div class="icon">
         <img class="icon__img" src="<?php echo $args['icon-src']; ?>" alt="<?php echo $args['name']; ?>" />
     </div>
