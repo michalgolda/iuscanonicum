@@ -943,6 +943,14 @@ textarea {
         justify-content: left;
         padding: 16px 32px 16px 32px;
       }
+
+      span, p, a {
+        color: white;
+      }
+
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }

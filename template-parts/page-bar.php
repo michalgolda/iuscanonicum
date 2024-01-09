@@ -3,10 +3,10 @@
         <h2><?php echo $args['name']; ?></h2>
     </div>
     <div class="page-bar__box page-bar__box--breadcrumbs">
-        <div class="breadcrumbs">
-            <a href="#"><span>Strona główna</span></a>
-            <span class="breadcrumbs__separator"></span>
-            <span><?php echo $args['name']; ?></span>
-        </div>
+        <?php
+        if (function_exists('yoast_breadcrumb')) {
+            yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+        }
+        ?>
     </div>
 </div>
