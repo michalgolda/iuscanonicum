@@ -16,6 +16,7 @@ wp_enqueue_script(
 
 <main class="container">
     <?php get_template_part('template-parts/page-bar', null, ['name' => 'Kontakt']); ?>
+    <?php dynamic_sidebar('iuscanonicum-contact-page-title'); ?>
     <?php dynamic_sidebar('iuscanonicum-contact-details'); ?>
     <div class="content">
         <img src="<?php echo iuscanonicum_get_image_src('google-map.jpg'); ?>" alt="google map" />

@@ -81,6 +81,13 @@ function iuscanonicum_widgets_init()
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>'
     ]);
+
+    register_sidebar([
+        'id' => 'iuscanonicum-contact-page-title',
+        'name' => 'Pasek tytułowy (Podstrona - kontakt)',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>'
+    ]);
 }
 
 function iuscanonicum_rest_api_init()
