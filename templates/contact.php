@@ -2,7 +2,6 @@
 /*
 Template Name: Kontakt
 */
-
 get_header();
 
 wp_enqueue_script(
@@ -19,7 +18,7 @@ wp_enqueue_script(
     <?php dynamic_sidebar('iuscanonicum-contact-page-title'); ?>
     <?php dynamic_sidebar('iuscanonicum-contact-details'); ?>
     <div class="content">
-        <img src="<?php echo iuscanonicum_get_image_src('google-map.jpg'); ?>" alt="google map" />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.7181230474357!2d19.932848076462644!3d50.05411147151916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6d053619f5%3A0xacb9dfc4d67fa598!2sZamek%20Kr%C3%B3lewski%20na%20Wawelu!5e0!3m2!1spl!2spl!4v1705395304118!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="form-wrapper">
             <?php dynamic_sidebar('iuscanonicum-contact-page-text-area'); ?>
             <form id="contact-form" class="form" autocomplete="off">
