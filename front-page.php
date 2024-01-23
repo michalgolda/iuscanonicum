@@ -1,7 +1,16 @@
 <?php
 wp_enqueue_style('iuscanonicum-aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
+wp_enqueue_style('iuscanonicum-swiper-style', get_template_directory_uri() . '/swiper.bundle.css');
 
 get_header();
+
+wp_enqueue_script(
+    'iuscanonicum-swiper-script',
+    get_template_directory_uri() . '/assets/scripts/swiper.bundle.js',
+    [],
+    false,
+    true
+);
 ?>
 <main>
     <?php get_template_part('template-parts/front-page/start-section'); ?>
@@ -14,17 +23,6 @@ get_header();
     <?php get_template_part('template-parts/front-page/banner-section'); ?>
     <?php get_template_part('template-parts/latest-articles'); ?>
 </main>
-<script type="text/javascript">
-    const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        autoplay: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-    });
-</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init()
