@@ -6,7 +6,8 @@
 
         $query_args = [
             'post_type' => 'advantage',
-            'post_status' => 'private'
+            'post_status' => 'private',
+            'posts_per_page' => 4
         ];
         $query = new WP_Query($query_args);
 
