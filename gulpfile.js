@@ -45,9 +45,10 @@ function watch() {
   gulp.watch("assets/styles/**/*.scss", gulp.series(compileStyles));
 }
 
-exports.build = gulp.series(cleanStyleFile, compileStyles);
-exports.dev = gulp.series(cleanStyleFile, compileStyles, watch);
-exports.buildSwiper = gulp.series(
+exports.build = gulp.series(
+  cleanStyleFile,
+  compileStyles,
   buildSwiperScriptBundle,
   buildSwiperStylesBundle
 );
+exports.dev = gulp.series(cleanStyleFile, compileStyles, watch);
