@@ -1,4 +1,5 @@
 <div class="team-member">
+    <img class="team-member__img" src="<?php echo $args['image-url']; ?>" alt="<?php echo $args['fullname'] ?>" />
     <div class="team-member__details">
         <div class="team-member__heading">
             <h3><?php echo $args['fullname']; ?></h3>
