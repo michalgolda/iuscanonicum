@@ -18,7 +18,10 @@ wp_enqueue_script(
     <?php dynamic_sidebar('iuscanonicum-contact-page-title'); ?>
     <?php dynamic_sidebar('iuscanonicum-contact-details'); ?>
     <div class="content">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.7181230474357!2d19.932848076462644!3d50.05411147151916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6d053619f5%3A0xacb9dfc4d67fa598!2sZamek%20Kr%C3%B3lewski%20na%20Wawelu!5e0!3m2!1spl!2spl!4v1705395304118!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="content__maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.948330434606!2d19.954871046591023!3d50.068529294720605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bddbabe6521%3A0xe219c44c9567c684!2sJoanna%20Zbierzchowska-Ocha%C5%82ek!5e0!3m2!1spl!2spl!4v1706199474056!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.969117787877!2d19.926185888918788!3d50.0681399980926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b062a83df7f%3A0x53b315dd041874fc!2sJana%20Sobieskiego%2010%2F14%2C%2031-136%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1706199599428!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div class="form-wrapper">
             <?php dynamic_sidebar('iuscanonicum-contact-page-text-area'); ?>
             <form id="contact-form" class="form" autocomplete="off">
