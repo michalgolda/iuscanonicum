@@ -27,6 +27,6 @@ wp_enqueue_script(
 </main>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer="defer"></script>
 <script>
-    AOS.init()
+    window.addEventListener("DOMContentLoaded", () => AOS.init());
 </script>
 <?php get_footer(); ?>
