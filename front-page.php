@@ -5,11 +5,13 @@ wp_enqueue_style('iuscanonicum-swiper-style', get_template_directory_uri() . '/s
 get_header();
 
 wp_enqueue_script(
-    'iuscanonicum-swiper-script',
+    'iuscanonicum-swiper-bundle',
     get_template_directory_uri() . '/assets/scripts/swiper.bundle.js',
     [],
     false,
-    true
+    [
+        "strategy" => "defer"
+    ]
 );
 ?>
 <main>
@@ -23,7 +25,7 @@ wp_enqueue_script(
     <?php get_template_part('template-parts/front-page/banner-section'); ?>
     <?php get_template_part('template-parts/latest-articles'); ?>
 </main>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer="defer"></script>
 <script>
     AOS.init()
 </script>
