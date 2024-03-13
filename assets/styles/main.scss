@@ -728,6 +728,10 @@ textarea {
     font-weight: 300;
   }
 
+  &__heading {
+    font-size: $h4-font-size;
+  }
+
   &__summary {
     display: none;
   }
