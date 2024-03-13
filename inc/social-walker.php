@@ -11,7 +11,7 @@ class IuscanonicumSocialWalker extends Walker
             $name = $element->post_name;
             $icon_src = iuscanonicum_get_image_src("{$name}-icon.svg");
 
-            $links[] = "<a class='footer__social-icon' href='{$url}'><img src='{$icon_src}' alt='{$name} icon' /></a>";
+            $links[] = "<li><a class='footer__social-icon' href='{$url}'><img src='{$icon_src}' alt='{$name} icon' /></a></li>";
         }
 
         return join("\n", $links);
