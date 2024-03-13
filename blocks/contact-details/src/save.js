@@ -13,7 +13,7 @@ export default function save({ attributes }) {
 						<img class="icon__img" src={emailIcon} alt="e-mail icon" />
 					</div>
 					<div class="wp-block-iuscanonicum-contact-details__details">
-						<h4>E-mail</h4>
+						<h3>E-mail</h3>
 						<RichText.Content
 							tagName="p"
 							id="wp-block-iuscanonicum-contact-details-email"
@@ -26,7 +26,7 @@ export default function save({ attributes }) {
 						<img class="icon__img" src={locationIcon} alt="location icon" />
 					</div>
 					<div class="wp-block-iuscanonicum-contact-details__details">
-						<h4>Lokalizacja</h4>
+						<h3>Lokalizacja</h3>
 						<RichText.Content
 							tagName="p"
 							id="wp-block-iuscanonicum-contact-details-location"
@@ -39,7 +39,7 @@ export default function save({ attributes }) {
 						<img class="icon__img" src={phoneIcon} alt="phone icon" />
 					</div>
 					<div class="wp-block-iuscanonicum-contact-details__details">
-						<h4>Numer kontaktowy</h4>
+						<h3>Numer kontaktowy</h3>
 						<RichText.Content
 							tagName="p"
 							id="wp-block-iuscanonicum-contact-details-phoneNumber"
@@ -52,7 +52,7 @@ export default function save({ attributes }) {
 						<img class="icon__img" src={clockIcon} alt="clock icon" />
 					</div>
 					<div class="wp-block-iuscanonicum-contact-details__details">
-						<h4>Godziny otwarcia</h4>
+						<h3>Godziny otwarcia</h3>
 						<RichText.Content
 							tagName="p"
 							id="wp-block-iuscanonicum-contact-details-openHours"
