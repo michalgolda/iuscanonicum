@@ -5,11 +5,13 @@ wp_enqueue_style('iuscanonicum-swiper-style', get_template_directory_uri() . '/s
 get_header();
 
 wp_enqueue_script(
-    'iuscanonicum-swiper-script',
+    'iuscanonicum-swiper-bundle',
     get_template_directory_uri() . '/assets/scripts/swiper.bundle.js',
     [],
     false,
-    true
+    [
+        "strategy" => "defer"
+    ]
 );
 ?>
 <main>

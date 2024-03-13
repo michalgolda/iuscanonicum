@@ -18,9 +18,27 @@ function iuscanonicum_after_setup_theme()
 function iuscanonicum_enqueue_scripts()
 {
     wp_enqueue_style('iuscanonicum-style', get_template_directory_uri() . '/style.css');
-    wp_enqueue_script('iuscanonicum-menu', get_template_directory_uri() . '/assets/scripts/menu.js');
-    wp_enqueue_script('iuscanonicum-scroll-top-btn', get_template_directory_uri() . '/assets/scripts/scroll-top-btn.js');
-    wp_enqueue_script('iuscanonicum-sub-menu', get_template_directory_uri() . '/assets/scripts/sub-menu.js');
+    wp_enqueue_script(
+        'iuscanonicum-menu',
+        get_template_directory_uri() . '/assets/scripts/menu.js',
+        [],
+        false,
+        ["strategy" => "defer"]
+    );
+    wp_enqueue_script(
+        'iuscanonicum-scroll-top-btn',
+        get_template_directory_uri() . '/assets/scripts/scroll-top-btn.js',
+        [],
+        false,
+        ["strategy" => "defer"]
+    );
+    wp_enqueue_script(
+        'iuscanonicum-sub-menu',
+        get_template_directory_uri() . '/assets/scripts/sub-menu.js',
+        [],
+        false,
+        ["strategy" => "defer"]
+    );
 }
 
 function iuscanonicum_blocks_init()
