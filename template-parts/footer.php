@@ -21,11 +21,11 @@
                 ?>
             </div>
             <div class="footer__box">
-                <h5>Kontakt</h5>
+                <span class="footer__heading">Kontakt</span>
                 <?php dynamic_sidebar('iuscanonicum-footer-contact-details'); ?>
             </div>
             <div class="footer__box">
-                <h5>Nasze specjalizacje</h5>
+                <span class="footer__heading">Nasze specjalizacje</span>
                 <?php
                 wp_nav_menu(
                     array(
@@ -39,7 +39,7 @@
                 ?>
             </div>
             <div class="footer__box">
-                <h5>Menu</h5>
+                <span class="footer__heading">Menu</span>
                 <?php
                 wp_nav_menu(
                     array(

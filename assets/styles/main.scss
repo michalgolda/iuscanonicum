@@ -779,8 +779,10 @@ textarea {
   height: auto;
   clear: both;
 
-  h5 {
+  &__heading {
     color: white;
+    font-size: $h5-font-size;
+    font-weight: 700;
   }
 
   p {
