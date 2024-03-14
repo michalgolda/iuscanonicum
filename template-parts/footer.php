@@ -6,7 +6,7 @@
         <div class="footer__primary-content container">
             <div class="footer__box">
                 <a class="footer__home-link" href="<?php echo get_home_url(); ?>">
-                    <img src="<?php echo iuscanonicum_get_image_src('footer-logo.svg'); ?>" width="271" height="48" alt="logo" />
+                    <img src="<?php echo iuscanonicum_get_image_src('footer-logo.svg'); ?>" loading="lazy" width="271" height="48" alt="logo" />
                 </a>
                 <?php dynamic_sidebar('iuscanonicum-footer-text-area'); ?>
                 <?php
