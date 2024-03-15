@@ -9,5 +9,5 @@
         </div>
         <a class="button button--primary" href="<?php echo iuscanonicum_get_permalink('/kontakt'); ?>">Skontaktuj się</a>
     </div>
-    <img class="hero__img" src="<?php echo $args['image-url']; ?>" alt="hero image" />
+    <img class="hero__img" src="<?php echo $args['image-url']; ?>" width="512" height="480" alt="hero image" />
 </div>

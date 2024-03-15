@@ -17,7 +17,7 @@ wp_enqueue_script(
 <main>
     <?php get_template_part('template-parts/front-page/start-section'); ?>
     <a class="scroll-down" href="#welcome">
-        <img src="<?php echo iuscanonicum_get_image_src('scroll-down-arrow.svg'); ?>" alt="scroll down arrow" />
+        <img src="<?php echo iuscanonicum_get_image_src('scroll-down-arrow.svg'); ?>" width="16" height="64" </head> alt="scroll down arrow" />
     </a>
     <?php get_template_part('template-parts/front-page/welcome-section'); ?>
     <?php get_template_part('template-parts/front-page/services-section'); ?>

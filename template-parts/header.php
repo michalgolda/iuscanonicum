@@ -1,6 +1,6 @@
 <header id="header" class="header container">
     <a class="header__home-link" href="<?php echo get_home_url(); ?>">
-        <img class="header__logo" src="<?php echo iuscanonicum_get_image_src('logo.svg'); ?>" alt="logo" />
+        <img class="header__logo" width="318" height="56" src="<?php echo iuscanonicum_get_image_src('logo.svg'); ?>" alt="logo" />
     </a>
     <div id="hamburger-btn" class="hamburger">
         <span class="hamburger__slice"></span>
