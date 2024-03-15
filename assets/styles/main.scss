@@ -5,6 +5,31 @@
 @import "_variables";
 @import "_utils";
 
+@font-face {
+  font-family: "Amulya-Regular";
+  src:
+       url("assets/fonts/Amulya-Regular.eot"),
+       url("assets/fonts/Amulya-Regular.woff2") format("woff2"),
+       url("assets/fonts/Amulya-Regular.woff") format("woff"),
+       url("assets/fonts/Amulya-Regular.ttf") format("truetype");
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Amulya-Medium';
+  src: 
+       url('assets/fonts/Amulya-Medium.eot'),
+       url('assets/fonts/Amulya-Medium.woff2') format('woff2'),
+       url('assets/fonts/Amulya-Medium.woff') format('woff'),
+       url('assets/fonts/Amulya-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +42,7 @@ html {
 
 body {
   font-size: $body-font-size;
-  font-family: "Amulya", sans-serif;
+  font-family: "Amulya-Regular", sans-serif;
 
   @include media-breakpoint-down(sm) {
     font-size: 14px;
